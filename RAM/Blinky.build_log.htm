@@ -1,0 +1,60 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+D:\Snake_uVision\ARM-SAM7X-256_Example4 - LCD\Blinky.uvproj
+Project File Date:  05/23/2014
+
+<h2>Output:</h2>
+Rebuild target 'SAM7X RAM - ULINK'
+Clean started - Project: 'Blinky'
+   deleting intermediate output files for target 'SAM7X RAM - ULINK'
+assembling SAM7.s...
+compiling Retarget.c...
+compiling delay.c...
+compiling lcd.c...
+lcd.c(154): warning:  #61-D: integer operation result is out of range
+        (AT91C_SPI_DLYBCS & (0 << 24)) |    // Delay between chip selects (take default: 6 MCK periods)
+lcd.c(165): warning:  #61-D: integer operation result is out of range
+        (AT91C_SPI_DLYBCT & (0x01 << 24))     |  // Delay between Consecutive Transfers (32 MCK periods)
+lcd.c: 2 warnings, 0 errors
+compiling Blinky.c...
+Blinky.c(121): warning:  #68-D: integer conversion resulted in a change of sign
+        WriteSpiData(-20);    // P1 = 32  volume value (experiment with this value to get the best contrast)
+Blinky.c(131): warning:  #223-D: function "sprintf" declared implicitly
+                                sprintf(tablica,"Szybkosc:%d",szybkosc);
+Blinky.c(273): warning:  #223-D: function "delay_ms" declared implicitly
+                        delay_ms(szybkosc);
+Blinky.c: 3 warnings, 0 errors
+linking...
+Program Size: Code=5776 RO-data=3148 RW-data=696 ZI-data=1160  
+".\RAM\Blinky.axf" - 0 Error(s), 5 Warning(s).
+
+*** Performing Cross-Module-Optimization:
+compiling Retarget.c...
+compiling delay.c...
+compiling lcd.c...
+lcd.c(154): warning:  #61-D: integer operation result is out of range
+        (AT91C_SPI_DLYBCS & (0 << 24)) |    // Delay between chip selects (take default: 6 MCK periods)
+lcd.c(165): warning:  #61-D: integer operation result is out of range
+        (AT91C_SPI_DLYBCT & (0x01 << 24))     |  // Delay between Consecutive Transfers (32 MCK periods)
+lcd.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=5384 RO-data=3148 RW-data=696 ZI-data=1160  
+compiling Retarget.c...
+compiling delay.c...
+compiling lcd.c...
+lcd.c(154): warning:  #61-D: integer operation result is out of range
+        (AT91C_SPI_DLYBCS & (0 << 24)) |    // Delay between chip selects (take default: 6 MCK periods)
+lcd.c(165): warning:  #61-D: integer operation result is out of range
+        (AT91C_SPI_DLYBCT & (0x01 << 24))     |  // Delay between Consecutive Transfers (32 MCK periods)
+lcd.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=5384 RO-data=3148 RW-data=696 ZI-data=1160  
+".\RAM\Blinky.axf" - 0 Error(s), 2 Warning(s).
+*** Completed Cross-Module-Optimization after 3 iteration(s).
+Load "D:\\Snake_uVision\\ARM-SAM7X-256_Example4 - LCD\\RAM\\Blinky.axf" 
+No Algorithm found for: 00200000H - 0020217FH
+Programming skipped!
+Error: Flash Download failed  -  ARM7TDMI

@@ -1,0 +1,24 @@
+*** Creating Trace Output File '.\RAM\Blinky.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\ram\sam7.o"'
+### List of Objects: adding '".\ram\retarget.o"'
+### List of Objects: adding '".\ram\blinky.o"'
+### List of Objects: adding '".\ram\adc.o"'
+### List of Objects: adding '".\ram\pwm.o"'
+### ADS-LD Command completed:
+--cpu ARM7TDMI ".\ram\sam7.o" ".\ram\retarget.o" ".\ram\blinky.o" ".\ram\adc.o" ".\ram\pwm.o" 
+--library_type=microlib --scatter ".\RAM\Blinky.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\RAM\Blinky.map" -o .\RAM\Blinky.axf### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '.\RAM\Blinky.axf'
+### ADS-LD Command File: '.\RAM\Blinky.l2p'
+### Checking for dirty Components...
+### Creating CmdFile '.\RAM\Blinky.l2p', Handle=0x000001B4
+### Writing '.lnp' file
+### ADS-LD Command file '.\RAM\Blinky.l2p' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

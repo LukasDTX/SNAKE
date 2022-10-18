@@ -1,0 +1,10 @@
+;#<FEEDBACK># ARM Linker, 5040049: Last Updated: Sat May 24 15:28:46 2014
+;VERSION 0.2
+;FILE blinky.o
+;FILE delay.o
+delay_s <= USED 0
+;FILE lcd.o
+Backlight <= USED 0
+LCDSetCircle <= USED 0
+;FILE retarget.o
+_sys_exit <= USED 0

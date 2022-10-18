@@ -1,0 +1,73 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+D:\Snake_uVision\MENU\Blinky.uvproj
+Project File Date:  05/25/2014
+
+<h2>Output:</h2>
+Rebuild target 'SAM7X Flash - ULINK'
+Clean started - Project: 'Blinky'
+   deleting intermediate output files for target 'SAM7X Flash - ULINK'
+assembling SAM7.s...
+compiling Retarget.c...
+compiling delay.c...
+compiling lcd.c...
+lcd.c(154): warning:  #61-D: integer operation result is out of range
+        (AT91C_SPI_DLYBCS & (0 << 24)) |    // Delay between chip selects (take default: 6 MCK periods)
+lcd.c(165): warning:  #61-D: integer operation result is out of range
+        (AT91C_SPI_DLYBCT & (0x01 << 24))     |  // Delay between Consecutive Transfers (32 MCK periods)
+lcd.c: 2 warnings, 0 errors
+compiling Blinky.c...
+delay.h(4): warning:  #47-D: incompatible redefinition of macro "uint16_t" (declared at line 12 of "Blinky.c")
+  #define uint16_t unsigned int
+Blinky.c(217): warning:  #223-D: function "sprintf" declared implicitly
+        sprintf(tablica,"PUNKTOW: %d",punkty);
+Blinky.c(269): warning:  #223-D: function "sprintf" declared implicitly
+        sprintf(tablica,"PUNKTOW: %d",punkty);
+Blinky.c(271): warning:  #223-D: function "rand" declared implicitly
+        apple_x = (4*(rand()%29+1))+1;
+Blinky.c(339): warning:  #223-D: function "sprintf" declared implicitly
+        sprintf(tablica,"PUNKTOW: %d",punkty);
+Blinky.c(342): warning:  #223-D: function "rand" declared implicitly
+        apple_x = (5*(rand()%24+1));
+Blinky.c(450): warning:  #68-D: integer conversion resulted in a change of sign
+        WriteSpiData(-20);    // P1 = 32  volume value (experiment with this value to get the best contrast)
+Blinky.c: 7 warnings, 0 errors
+compiling menu.c...
+linking...
+Program Size: Code=8248 RO-data=3148 RW-data=696 ZI-data=1176  
+".\Flash\Blinky.axf" - 0 Error(s), 9 Warning(s).
+
+*** Performing Cross-Module-Optimization:
+compiling Retarget.c...
+compiling delay.c...
+compiling lcd.c...
+lcd.c(154): warning:  #61-D: integer operation result is out of range
+        (AT91C_SPI_DLYBCS & (0 << 24)) |    // Delay between chip selects (take default: 6 MCK periods)
+lcd.c(165): warning:  #61-D: integer operation result is out of range
+        (AT91C_SPI_DLYBCT & (0x01 << 24))     |  // Delay between Consecutive Transfers (32 MCK periods)
+lcd.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=7868 RO-data=3148 RW-data=696 ZI-data=1176  
+compiling Retarget.c...
+compiling delay.c...
+compiling lcd.c...
+lcd.c(154): warning:  #61-D: integer operation result is out of range
+        (AT91C_SPI_DLYBCS & (0 << 24)) |    // Delay between chip selects (take default: 6 MCK periods)
+lcd.c(165): warning:  #61-D: integer operation result is out of range
+        (AT91C_SPI_DLYBCT & (0x01 << 24))     |  // Delay between Consecutive Transfers (32 MCK periods)
+lcd.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=7868 RO-data=3148 RW-data=696 ZI-data=1176  
+FromELF: creating hex file...
+".\Flash\Blinky.axf" - 0 Error(s), 2 Warning(s).
+*** Completed Cross-Module-Optimization after 3 iteration(s).
+Load "D:\\Snake_uVision\\MENU\\Flash\\Blinky.axf" 
+Erase Done.
+Programming Done.
+Verify OK.
+</pre>
+</body>
+</html>

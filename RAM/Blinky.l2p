@@ -1,0 +1,10 @@
+--cpu ARM7TDMI
+".\ram\sam7.o"
+".\ram\retarget.o"
+".\ram\delay.o"
+".\ram\lcd.o"
+".\ram\blinky.o"
+--library_type=microlib --scatter ".\RAM\Blinky.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\RAM\Blinky.map" -o .\RAM\Blinky.axf
